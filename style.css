@@ -370,6 +370,7 @@ display: flex;
     width: 100%;
     position: relative;
     overflow: hidden;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -382,15 +383,26 @@ display: flex;
 }
 
 .img-mini {
-    height: 40% ;
+    height: 77% ;
 }
 
+.img-mini-3 {
+    height: 66%;
+}
+
+.img-mini-5 {
+    height: 70%;
+}
+
+.img-mini-6 {
+    height: 75%;
+}
 .body-activites {
     height: 50px;
 }
 
 .body-activites p {
-    margin: 0;
+    margin: 15px 20px;
 }
 
 .card-activites-2 {
