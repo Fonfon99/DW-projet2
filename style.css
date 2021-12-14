@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: "raleway", sans-serif ;
     ;
@@ -24,6 +27,19 @@ margin: 20px 0 0 40px ;
 
 nav li {
     margin: 0 10px 0 20px;
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li:hover {
+    text-decoration: overline #0065FC;
+    color: #DEEBFF;
 }
 
 .icone-small {
