@@ -1,3 +1,30 @@
+@media screen and (max-device-width: 768px) 
+{
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-filtres {
+        flex-wrap: wrap;
+    }
+
+    .partie-hebergements {
+        flex-direction: column-reverse;
+    }
+
+    .activites {
+        flex-direction: column;
+    }
+
+    .colonne {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
 
 
 
@@ -14,7 +41,7 @@ header {
     align-items: center;
 }
 
-header img {
+.image-logo img {
 height: 45px ;
 margin: 20px 0 0 40px ;
 }
@@ -143,6 +170,7 @@ background-color: #DEEBFF;
 .menu-filtres i {
     margin-top: 14px;
     margin-left: 14.5px;
+    color: #0065FC;
 }
 
 .filtres h1 {
@@ -172,6 +200,7 @@ background-color: #DEEBFF;
 
 .informations i {
 margin-top: 3px;
+color: #0065FC;
 }
 
 .informations p {
