@@ -68,23 +68,26 @@ margin-left: 18px;
 button {
     background-color:#0065FC;
     color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 10px 10px 0px;
     border: none;
     height: 40px;
     width: 90px;
     font-size: 13px;
+    margin-left: -5px;
+    margin-top: 0.5px;
     
 }
 
 input {
     height:40px ;
+    width: 230px;
 }
 
 .filtres {
    display: flex;
    flex-wrap: wrap;
     margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .filtres h1 {
@@ -103,16 +106,16 @@ input {
     display: flex;
     border: 2px solid #F2F2F2 ;
     border-radius: 25px;
-    height: 40px;
-    padding-right: 20px;
-    margin-right: 25px;
+    height: 45px;
+    padding-right: 22px;
+    margin-right: 35px;
 }
 
 .menu-filtres > div > div {
-background-color: #ccc;
-    height: 42px;
-    width: 42px;
-    border-radius: 20px;
+background-color: #DEEBFF;
+    height: 46px;
+    width: 46px;
+    border-radius: 25px;
     margin-left: -5px;
 }
 
@@ -122,8 +125,8 @@ background-color: #ccc;
 }
 
 .menu-filtres i {
-    margin-top: 13px;
-    margin-left: 12.5px;
+    margin-top: 14px;
+    margin-left: 14.5px;
 }
 
 .filtres h1 {
@@ -137,7 +140,8 @@ background-color: #ccc;
 .informations {
     display: flex;
     font-size: 10px;
-    margin-left: 35px;
+    
+    margin: 20px 0 20px 35px;
 }
 
 .informations div {
@@ -202,7 +206,7 @@ margin-top: 3px;
     height: 160px; 
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
     margin-bottom: 30px ;
 }
 
@@ -287,7 +291,7 @@ font-size: 22px;
     width: 320px;
     height: 120px;
     background-color: white;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
     border-radius: 15px;
     margin-bottom: 30px ;
 }
@@ -337,10 +341,12 @@ font-size: 22px;
 .partie-activites {
     height: 400px;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    margin-top: 60px;
 }
 .titre-activites {
     margin-left: 30px;
+    margin-bottom: 25px;
     }
 
 .activites {
@@ -348,6 +354,7 @@ font-size: 22px;
 height: 100%;
 width: 100%;
 display: flex;
+
 
 }
 
@@ -361,7 +368,7 @@ display: flex;
 .card-activites-1-4 {
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
     
 }
 
@@ -408,25 +415,25 @@ display: flex;
 .card-activites-2 {
     height: 55%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
     margin-bottom: 40px;
 }
 .card-activites-3 {
     
     height: 35%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
 }
 .card-activites-5 {
     height: 42%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
     margin-bottom: 40px;
 }
 .card-activites-6 {
     height: 48%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 30px #a1a1a1;
 }
 
 
@@ -437,6 +444,8 @@ display: flex;
 display: flex;
 justify-content: flex-start ;
 background-color: #F2F2F2 ;
+padding-top: 30px;
+
 
 }
 .footer li {
