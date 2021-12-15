@@ -1,16 +1,35 @@
-@media screen and (max-device-width: 768px) 
+@media only screen and (max-width: 768px) 
 {
     header {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    nav li:hover {
+        border-bottom: 2px solid #0065FC ;
+        color: #0065FC;
     }
 
     .menu-filtres {
         flex-wrap: wrap;
     }
 
+    .menu-filtres > div {
+        margin-bottom: 15px;
+    }
+
     .partie-hebergements {
         flex-direction: column-reverse;
+    }
+
+    .populaires {
+        width:100%;
+    }
+
+    .hebergements {
+        background-color: none;
+        width: 100%;
     }
 
     .activites {
@@ -30,7 +49,7 @@
 
 body {
     font-family: "raleway", sans-serif ;
-    ;
+    margin: 0;
 }
 
 /*Header*/
@@ -38,7 +57,6 @@ body {
 header {
     display: flex;
     justify-content: space-between ;
-    align-items: center;
 }
 
 .image-logo img {
@@ -46,31 +64,29 @@ height: 45px ;
 margin: 20px 0 0 40px ;
 }
 
- nav ul {
+
+nav ul {
     display: flex;
     list-style: none;
-    margin-right: 15px;
+    margin: 0 15px 0 0;
 }
 
 nav li {
-    margin: 0 10px 0 20px;
-}
-
-a:visited {
-    color: black;
+    padding: 30px 20px 0 20px;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 nav li:hover {
-    text-decoration: overline #0065FC;
-    color: #DEEBFF;
+    border-top: 2px solid #0065FC ;
+    color: #0065FC;
 }
 
 .icone-small {
-    border: 1px solid grey;
+    border: 1px solid #F2F2F2;
 }
 
 /*main*/
@@ -78,9 +94,7 @@ nav li:hover {
 /*en-tête*/
 
 .recherche {
-    width: 600px;
     margin-left: 30px;
-
 }
 
 .recherche h1 {
@@ -328,7 +342,7 @@ font-size: 22px;
 .article-small {
    height: 80%;
    width: 80%;
-   margin-left: 85px;
+   margin-left: 65px;
    
 }
 .small {
