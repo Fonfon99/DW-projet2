@@ -196,7 +196,7 @@ color: #0065FC;
     vertical-align: top;
     min-height: 100%;
     min-width: 64%;
-    margin-left: 30px;
+    margin-left: 2%;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
@@ -275,6 +275,10 @@ font-size: 9px;
 color:#0065FC ;
 }
 
+.grey {
+    color: #D5DADF;
+}
+
 .populaires { 
     vertical-align: top;
     margin-left: 20px;
@@ -304,8 +308,8 @@ font-size: 22px;
 .article-small {
    height: 80%;
    min-width: 60%;
-   margin-left: 88px;
-   margin-right: 83px;
+   margin-left: 15%;
+   margin-right: 10%;
 }
 .small {
     display: flex;
@@ -360,9 +364,9 @@ font-size: 22px;
 
 
 .partie-activites {
-    height: 400px;
+    height: 420px;
     width: 100%;
-    margin-bottom: 100px;
+    
     margin-top: 60px;
 }
 .titre-activites {
@@ -375,12 +379,22 @@ font-size: 22px;
 height: 100%;
 width: 100%;
 display: flex;
+}
 
+.colonne-1 {
+    display: flex;
+    width: 49%;
+    margin-bottom: 50px;
+}
 
+.colonne-2 {
+    display: flex;
+    width: 49%;
+    margin-bottom: 50px;
 }
 
 .colonne {
-    width: 23%;
+    width: 80%;
     height: 100%;
     margin-left: 20px;
 
@@ -426,12 +440,14 @@ display: flex;
     height: 75%;
 }
 .body-activites {
-    height: 20%;
+    height: fit-content;
+    margin: 0px 10px;
 }
 
 .body-activites p {
-    margin: 15px 20px;
+    margin-top: 7px;
 }
+
 
 .card-activites-2 {
     height: 55%;
@@ -461,15 +477,14 @@ display: flex;
 /*footer*/
 
 .footer {
-    height: 15%;
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start ;
-background-color: #F2F2F2 ;
-padding-top: 30px;
-
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start ;
+    background-color: #F2F2F2 ;
+    margin-top: 30px;
 
 }
+
 .footer li {
     list-style: none;
     margin-bottom: 10px;
@@ -481,6 +496,80 @@ padding-top: 30px;
 
 .titre-footer {
     margin-left: 40px;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width:992px)
+{
+
+    .menu-filtres {
+        flex-wrap: wrap;
+    }
+
+    .menu-filtres > div {
+        margin-bottom: 15px;
+    }
+
+    .partie-hebergements {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .populaires {
+        max-width: 100%;
+        border-radius: 0px;
+        margin: 0px 0px;
+    }
+
+    .small {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .body-small {
+        width: 50%;
+    }
+
+    .hebergements {
+        background-color: white;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .partie-activites {
+        height: 100%;
+    }
+
+    .activites {
+        flex-direction: column;
+        margin-left: 0;
+        height: 700px;
+    }
+
+    .colonne-1 {
+        margin-bottom: 40px;
+        height: 45%;
+        width: 98%;
+    }
+
+    .colonne-2 {
+        margin-bottom: 10px;
+        height: 45%;
+        width: 98%;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .info-footer {
+        margin-right: 5%;
+    }
 }
 
 @media only screen and (max-width: 768px) 
@@ -519,6 +608,10 @@ padding-top: 30px;
 
     .formulaire {
         justify-content: center;
+    }
+
+    button {
+        width:40px
     }
 
     .mobile-none {
@@ -568,12 +661,26 @@ padding-top: 30px;
         width: 80%;
     }
 
+
     .partie-activites {
         height: 100%;
     }
 
     .activites {
         flex-direction: column;
+        margin-left: 0;
+    }
+
+    .colonne-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .colonne-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .colonne {
@@ -581,12 +688,13 @@ padding-top: 30px;
         height: 100%;
         width: 100%;
         margin-bottom: 30px;
+        margin-left: 0;
     }
 
     .colonne > div {
         height: 150px;
         width: 70%;
-        margin-left: 45px;
+        margin-left: 75px;
     }
 
     .image-activites {
