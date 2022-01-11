@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav li {
-    padding: 30px 13.5px 0 13.5px;
+    padding: 40px 25px 0 25px;
 }
 
 a {
@@ -48,13 +48,16 @@ nav li:hover {
 
 /*en-tête*/
 
+.en-tete {
+    margin-top: 30px;
+}
 .recherche {
     margin-left: 30px;
 }
 
 .recherche h1 {
-    margin: 20px 0 0 0;
-font-size: 20px;
+    font-size: 20px;
+    margin: 0;
 }
 
 .recherche p {
@@ -135,7 +138,9 @@ background-color: #DEEBFF;
 }
 
 .menu-filtres b {
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
     margin-left: 15px;
 }
 
@@ -156,22 +161,24 @@ background-color: #DEEBFF;
 .informations {
     display: flex;
     font-size: 10px;
-    
+    width: fit-content;
     margin: 20px 0 20px 35px;
 }
 
 .informations div {
-    height: 15px;
-    width: 15px;
-    border: 1px solid black;
-    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid grey;
+    border-radius: 50%;
     text-align: center;
+    justify-content: center;
     margin-right: 10px;
     margin-top: 2px;
 }
 
 .informations i {
-margin-top: 3px;
+
+margin-top: 4px;
 color: #0065FC;
 }
 
@@ -223,7 +230,7 @@ color: #0065FC;
 
 
 .medium {
-    width: 210px;
+    width: 28%;
     height: 160px; 
     background-color: white;
     border-radius: 10px;
@@ -252,7 +259,7 @@ transform: translate(-50%, -50%);
 .card-body {
     box-sizing: border-box;
     width: 100%;
-    padding: 5px 10px;
+    padding:1% 0 0 2%;
     
 }
 
@@ -266,7 +273,7 @@ transform: translate(-50%, -50%);
 
 .card-details p {
     font-size: 12px;
-    margin: 4px 0px ;
+    margin: 2px 0px ;
     
 }
 
@@ -313,7 +320,7 @@ font-size: 22px;
 }
 .small {
     display: flex;
-    max-width: 320px;
+    max-width: 10    0%;
     height: 120px;
     background-color: white;
     box-shadow: 0px 0px 30px #a1a1a1;
@@ -339,7 +346,11 @@ font-size: 22px;
 }
 
 .body-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 15px;
+    padding-bottom: 2%;
     width: 156px;
    
 }
@@ -353,7 +364,6 @@ font-size: 22px;
 }
 
 .note-small {
-    margin-top: 30px ;
     font-size: 9px;
     color:#0065FC ;
     }
@@ -375,7 +385,6 @@ font-size: 22px;
     }
 
 .activites {
-    margin-left: 10px;
 height: 100%;
 width: 100%;
 display: flex;
@@ -440,12 +449,19 @@ display: flex;
     height: 75%;
 }
 .body-activites {
+    height: 12%;
+    margin-left: 10px;
+    padding-top: 4%;
+}
+
+.localisation {
     height: fit-content;
-    margin: 0px 10px;
+    justify-content: center;
 }
 
 .body-activites p {
-    margin-top: 7px;
+    justify-content: center;
+    margin: 0;
 }
 
 
@@ -511,6 +527,13 @@ display: flex;
         margin-bottom: 15px;
     }
 
+    .menu-filtres b {
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        margin-left: 15px;
+    }
+
     .partie-hebergements {
         flex-direction: column-reverse;
         width: 100%;
@@ -559,6 +582,10 @@ display: flex;
         height: 45%;
         width: 98%;
     }
+
+.body-activites {
+    padding-top: 3%;
+}
 
     .footer {
         display: flex;
@@ -653,8 +680,15 @@ display: flex;
         margin-left: 0px;
     }
 
+    .hebergements h1 {
+        margin-left: 30px;
+
+    }
+
     .articles {
-        margin-left: 50px;
+        margin: 0;
+        width: 100%;
+        align-content: center;
     }
 
     .medium {
@@ -694,11 +728,15 @@ display: flex;
     .colonne > div {
         height: 150px;
         width: 70%;
-        margin-left: 75px;
+        margin-left: 15%;
     }
 
     .image-activites {
         height: 80%;
+    }
+
+    .body-activites {
+        padding-top: 2px;
     }
 
     .body-activites p {
